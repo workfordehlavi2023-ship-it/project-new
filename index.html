@@ -927,6 +927,11 @@ const revealObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('#join-steps li').forEach(li => revealObserver.observe(li));
 </script>
 <script>
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+}
+</script>
+<script>
 function handleJoinAccess() {
   const today = new Date();
   const currentDate = today.getDate();

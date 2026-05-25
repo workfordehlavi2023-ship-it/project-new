@@ -904,6 +904,28 @@ const revealObserver = new IntersectionObserver((entries) => {
 // Join steps staggered
 document.querySelectorAll('#join-steps li').forEach(li => revealObserver.observe(li));
 </script>
+<script>
+function handleJoinAccess() {
+  const today = new Date();
+  const currentDate = today.getDate();
+
+  if (currentDate > 1) {
+    alert(
+      "Admissions for this month are closed. Please DM our Instagram page for further information."
+    );
+
+    window.open(
+      "https://www.instagram.com/project_waliullah_bookclub",
+      "_blank"
+    );
+  } else {
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSeAdtxu3MxlNepiAs7anWKH5UcDoqtVXuV2GtAooOvmDFGEvA/viewform",
+      "_blank"
+    );
+  }
+}
+</script>
 
 </body>
 </html>

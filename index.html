@@ -623,6 +623,24 @@ footer {
 @media (max-width: 768px) {
   nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
+  .mobile-menu-btn {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--gold);
+}
+
+.nav-links.active {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  background: var(--cream);
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  gap: 1rem;
+}
   .book-card { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
   .book-cover-wrap::after { display: none; }
   .about-inner { grid-template-columns: 1fr; gap: 2rem; }

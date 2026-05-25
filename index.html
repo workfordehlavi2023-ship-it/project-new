@@ -292,6 +292,10 @@ nav.scrolled {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 .book-card.visible { opacity: 1; transform: translateY(0); }
+.book-card:hover,
+.fees-card:hover {
+  transform: translateY(-4px);
+}
 .book-card::before {
   content: '';
   position: absolute; top: 0; left: 0;

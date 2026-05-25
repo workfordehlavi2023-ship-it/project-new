@@ -947,18 +947,22 @@ function handleJoinAccess() {
   const today = new Date();
   const currentDate = today.getDate();
 
-  if (currentDate > 1) {
+  // Allowed dates: 25th → 31st and 1st
+  if (currentDate >= 25 || currentDate === 1) {
+
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSeAdtxu3MxlNepiAs7anWKH5UcDoqtVXuV2GtAooOvmDFGEvA/viewform",
+      "_blank"
+    );
+
+  } else {
+
     alert(
-      "Admissions for this month are closed. Please DM our Instagram page for further information."
+      "Admissions are currently closed. New members can apply from the 25th of every month till the 1st. Please DM our Instagram page for late admission or further information."
     );
 
     window.open(
       "https://www.instagram.com/project_waliullah_bookclub",
-      "_blank"
-    );
-  } else {
-    window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSeAdtxu3MxlNepiAs7anWKH5UcDoqtVXuV2GtAooOvmDFGEvA/viewform",
       "_blank"
     );
   }

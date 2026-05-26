@@ -843,11 +843,20 @@ footer {
 <!-- ============================================================
      BUY BOOKS
      ============================================================ -->
-<section id="buy-books" style="padding: 3rem 2rem; background: var(--cream-dark); text-align: center; border-top: 1px solid var(--border);">
+<section id="buy-books" style="padding: 6rem 2rem; background: var(--cream); text-align: center; border-top: 1px solid var(--border);">
+  
   <p class="section-label">Get Your Copy</p>
-  <h2 class="section-title" style="margin-bottom: 0.5rem;">Buy the Books</h2>
-  <p style="font-family: var(--font-read); font-style: italic; color: var(--ink-muted); margin-bottom: 1.5rem;">All reading circle books are available through our store.</p>
-  <a href="https://www.instagram.com/dar.ul.amaan" target="_blank" class="btn-primary">Visit Our Book Store →</a>
+  <h2 class="section-title">Buy the Books</h2>
+
+  <span class="gold-rule wide"></span>
+
+  <p style="font-family: var(--font-read); font-style: italic; color: var(--ink-muted); margin-bottom: 2rem;">
+    All reading circle books are available through our store.
+  </p>
+
+  <a href="https://www.instagram.com/dar.ul.amaan" target="_blank" class="btn-primary" rel="noopener noreferrer">
+    Visit Our Book Store →
+  </a>
 </section>
 
 <!-- ============================================================
@@ -941,6 +950,7 @@ const revealObserver = new IntersectionObserver((entries) => {
   '#mission-text',
   '#about-p1', '#about-p2', '#about-p3',
   '#fees-card',
+  '#buy-books'
 ].forEach(sel => {
   const el = document.querySelector(sel);
   if (el) revealObserver.observe(el);

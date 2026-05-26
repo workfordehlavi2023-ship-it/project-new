@@ -967,30 +967,25 @@ function toggleMenu() {
    
 <script>
 function handleJoinAccess() {
-  const today = new Date();
-  const currentDate = today.getDate();
+  const currentDate = new Date().getDate();
 
-  // Open admissions from 24th to 31st
+  const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSeAdtxu3MxlNepiAs7anWKH5UcDoqtVXuV2GtAooOvmDFGEvA/viewform";
+  const instaURL = "https://www.instagram.com/project_waliullah_bookclub";
+
+  // OPEN PERIOD (24th–31st)
   if (currentDate <= 24) {
-
-    window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSeAdtxu3MxlNepiAs7anWKH5UcDoqtVXuV2GtAooOvmDFGEvA/viewform",
-      "_blank"
-    );
-
-  } else {
-
-    alert(
-      "Admissions are currently closed. New members can apply from the 25th of every month onward. Please DM our Instagram page for further information."
-    );
-
-    setTimeout(() => {
-      window.open(
-        "https://www.instagram.com/project_waliullah_bookclub",
-        "_blank"
-      );
-    }, 200);
+    window.open(formURL, "_blank");
+    return;
   }
+
+  // CLOSED PERIOD
+  setTimeout(() => {
+    alert("Admissions are currently closed. New members can apply from the 25th of every month onward. Please DM our Instagram page for further information.");
+  }, 50);
+
+  setTimeout(() => {
+    window.open(instaURL, "_blank");
+  }, 300);
 }
 </script>
 

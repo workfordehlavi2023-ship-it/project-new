@@ -969,7 +969,7 @@ function toggleMenu() {
 function handleJoinAccess() {
   var currentDate = new Date().getDate();
 
-  if (currentDate >= 24) {
+  if (currentDate <= 24) {
 
     window.open(
       "https://docs.google.com/forms/d/e/1FAIpQLSeAdtxu3MxlNepiAs7anWKH5UcDoqtVXuV2GtAooOvmDFGEvA/viewform",
@@ -987,8 +987,8 @@ function closePopup() {
   document.getElementById("joinPopup").style.display = "none";
 }
 
-function goToInstagram() {
-  window.open("https://www.instagram.com/project_waliullah_bookclub", "_blank");
+function goToLateReg() {
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLScBNFExxMz4L4JdB4HIFWP7S0MycHwiigU_d-8ZF8pKH1RdpQ/viewform", "_blank");
   closePopup();
 }
 </script>
@@ -1001,12 +1001,12 @@ onclick="closePopup()">
     style="background:#faf8f4; padding:25px; max-width:400px; width:85%; border-radius:12px; text-align:center; font-family:serif;">
 
     <p style="margin-bottom:20px; font-size:1rem; color:#3d3020;">
-     Admissions are temporarily closed at the moment. New membership applications are accepted from the 24th of every month onward. For late entry consideration, please feel free to DM our page to discuss further.
+     Admissions for the current cycle are presently closed. Regular membership applications reopen from the 24th of every month onward. However, you may still submit the late registration form for consideration. Depending on availability, you may still be accommodated in the current reading cycle, though late applicants may miss some ongoing classes and discussions. If no spots remain, you will be accommodated in the next upcoming book cycle instead.
     </p>
 
-    <button onclick="goToInstagram()" 
+    <button onclick="goToLateReg()" 
       style="padding:10px 15px; margin-right:10px; background:#b8912a; color:white; border:none; cursor:pointer;">
-      Go to the Instagram Page
+      Go to the Registration Form
     </button>
 
     <button onclick="closePopup()" 
